@@ -63,8 +63,8 @@ nav ul li a {
 }
 
 .services .icon {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     background-color: #ccc;
     border-radius: 50%;
     display: flex;
@@ -76,7 +76,9 @@ nav ul li a {
 .buttons {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 5px;
+
+
 }
 
 .buttons button {
@@ -87,6 +89,7 @@ nav ul li a {
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
+   
 }
 
 .forest {
