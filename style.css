@@ -171,23 +171,30 @@ nav ul li a:hover {
     color: white;
 }
 
-.forest .overlay {
+.forest .overlay{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
+    padding: 25px 30px;
     font-size: 24px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+#floresta {
+   text-decoration: none;
+   color: #fff;
+   font-size: 23px;
 }
 
 .forest img {
     width: 100%;
     height: auto;
 }
+
 
 /* Footer */
 footer {
