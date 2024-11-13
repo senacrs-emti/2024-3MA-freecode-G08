@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DT Company</title>    
+    <title>DT Company</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Header -->
     <header>
         <div class="container">
@@ -18,12 +17,10 @@
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#">Linha do Tempo</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="#forest">Linha do Tempo</a></li>
+                            <li><a href="#services">Sobre</a></li>
+                            <li><a href="#footer">Contato</a></li>
                         </ul>
-                        <div class="menu-icon">☰</div>
                     </nav>
                 </div>
             </div>
@@ -32,16 +29,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
-            <img src="./img/70690c61-9eb1-45b7-b42f-4403a9e946ef 2.png" alt="Imagem da Natureza">
+        <img src="./img/70690c61-9eb1-45b7-b42f-4403a9e946ef 2.png" alt="Imagem da Natureza">
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="title">
                 <h2>DT <span>Services</span></h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, quo accumsan voluptatum sit convenire. Quidam officiis intellegam eum et, te lorem neglegentur intellegam. Qui fugait expetendis non has, harum est aliquip ipsum.</p>
+            <p>Na DT Services, acreditamos que nossas escolhas moldam o futuro: em 50 anos, podemos enfrentar um planeta devastado pelo desmatamento ou prosperar com florestas preservadas.</p>
             <div class="icons">
                 <div class="icon">Lorem</div>
                 <div class="icon">Lorem</div>
@@ -53,31 +50,39 @@
 
     <!-- Buttons Section -->
     <section class="buttons">
-        <div class="container">
-            <button>96<br>LOREM</button>
-            <button>255<br>LOREM</button>
-            <button>255<br>LOREM</button>
-            <button>96<br>LOREM</button>
-        </div>
+        
+            <button onclick="openModal()">96<br>LOREM</button>
+            <button onclick="openModal()">255<br>LOREM</button>
+            <button onclick="openModal()">255<br>LOREM</button>
+            <button onclick="openModal()">96<br>LOREM</button>
+        
     </section>
 
     <!-- Forest Section -->
-    <section class="forest">
-    
-            <div class="overlay">
-                <a id="floresta" href="./timeline.html"><h2>Save Our Forest</h2></a>
-            </div>
-            <img src="./img/pathway-middle-green-leafed-trees-with-sun-shining-through-branches.jpg" alt="Imagem da Floresta">
-       
+    <section class="forest" id="forest">
+        <div class="overlay">
+            <a id="floresta" href="./timeline.html"><h2>Salve o Planeta Terra!</h2></a>
+        </div>
+        <img src="./img/pathway-middle-green-leafed-trees-with-sun-shining-through-branches.jpg" alt="Imagem da Floresta">
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <p>&copy; 2024 DT Company</p>
             <p>Desenvolvido com ❤️ por @Dgduarte_7 e @Tiaguinhuuuu</p>
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Mudanças no uso da terra do planeta</h3>
+            <p>O desmatamento e a conversão de ecossistemas naturais em áreas agrícolas e urbanas estão destruindo habitats e comprometendo a regulação climática. Esses processos ultrapassaram níveis seguros e agora representam uma zona de alto risco ambiental.</p>
+            <button class="close-btn" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
