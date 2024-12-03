@@ -39,6 +39,10 @@ body {
     box-sizing: border-box;
 }
 
+.timeline-event p{
+    margin-top: 10px;
+}
+
 .timeline-event:nth-child(odd) {
     left: 0;
     text-align: right;
