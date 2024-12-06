@@ -50,12 +50,30 @@
 
     <!-- Buttons Section -->
     <section class="buttons">
-        
-            <button onclick="openModal()">Info<br><h2>One</h2></button>
-            <button onclick="openModal()">Info<br><h2>Two</h2></button>
-            <button onclick="openModal()">Info<br><h2>Three</h2></button>
-            <button onclick="openModal()">Info<br><h2>Four</h2></button>
-        
+        <button 
+            data-title="Mudança Climática" 
+            data-content="O aquecimento global está alterando o equilíbrio dos ecossistemas e intensificando desastres naturais." 
+            onclick="openModal(this)">
+            Info<br><h2>Um</h2>
+        </button>
+        <button 
+            data-title="Desmatamento" 
+            data-content="As florestas estão sendo destruídas em taxas alarmantes, prejudicando a biodiversidade e o clima." 
+            onclick="openModal(this)">
+            Info<br><h2>Dois</h2>
+        </button>
+        <button 
+            data-title="Poluição" 
+            data-content="A poluição do ar e da água ameaça a saúde humana e a sobrevivência da vida selvagem." 
+            onclick="openModal(this)">
+            Info<br><h2>Três</h2>
+        </button>
+        <button 
+            data-title="Soluções Sustentáveis" 
+            data-content="Adotar práticas ecológicas pode reverter os impactos ambientais." 
+            onclick="openModal(this)">
+            Info<br><h2>Quarto</h2>
+        </button>
     </section>
 
     <!-- Forest Section -->
@@ -77,8 +95,8 @@
     <!-- Modal -->
     <div class="modal" id="modal">
         <div class="modal-content">
-            <h3>Mudanças no uso da terra do planeta</h3>
-            <p>O desmatamento e a conversão de ecossistemas naturais em áreas agrícolas e urbanas estão destruindo habitats e comprometendo a regulação climática. Esses processos ultrapassaram níveis seguros e agora representam uma zona de alto risco ambiental.</p>
+            <h3 id="modal-title"></h3>
+            <p id="modal-content"></p>
             <button class="close-btn" onclick="closeModal()">Fechar</button>
         </div>
     </div>

@@ -1,20 +1,32 @@
-// Função para abrir o modal
-function openModal() {
-    document.getElementById('modal').style.display = 'flex';
+// Função para abrir o modal com informações personalizadas
+function openModal(button) {
+    const modal = document.getElementById('modal');
+    
+    // Obtém os atributos data-title e data-content do botão clicado
+    const title = button.getAttribute('data-title');
+    const content = button.getAttribute('data-content');
+
+    // Define o título e o conteúdo no modal
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-content').textContent = content;
+
+    // Exibe o modal
+    modal.style.display = 'flex';
 }
 
 // Função para fechar o modal
 function closeModal() {
-    document.getElementById('modal').style.display = 'none';
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
 }
 
-// Fecha o modal se clicar fora do conteúdo
+// Fecha o modal se o usuário clicar fora do conteúdo
 window.onclick = function(event) {
-    let modal = document.getElementById('modal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        closeModal();
     }
-}
+};
 
 // Função de rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
